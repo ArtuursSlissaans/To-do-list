@@ -1,9 +1,14 @@
-console.log("Strādā");
+const POP_UP = document.getElementById('popUp');
+let biblioteka = []
 
 document.getElementById('PievienotToDoListu').addEventListener('click', () => {
-    console.log("poga nospiesta!");
+    POP_UP.style.display = 'block'
+})
 
-    let popUp = document.getElementById('popUp');
+document.getElementById('PieveinotJaunuToDo').addEventListener('click', () => {
+    POP_UP.style.display = 'none'
 
-    popUp.style.display = 'block'
+    let ToDoList = {KoTuDarīsi: KoTuDarīsi.value, Cikos: Cikos.value};
+
+    console.log(ToDoList)
 })
